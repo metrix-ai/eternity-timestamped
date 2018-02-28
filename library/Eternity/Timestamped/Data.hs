@@ -5,9 +5,6 @@ import Eternity.Timestamped.Prelude
 import qualified Generic.Random as A
 
 
--- * Types
--------------------------
-
 {-|
 A value paired with a timestamp. 
 -}
@@ -21,9 +18,6 @@ This datatype is used instead of 'UTCTime' for space-efficiency.
 -}
 newtype Timestamp = Timestamp Int64
 
-
--- * Instances
--------------------------
 
 deriving instance Eq a => Eq (Timestamped a)
 deriving instance Ord a => Ord (Timestamped a)
