@@ -18,6 +18,9 @@ timestampPosixTime = timestampNominalDiffTime
 timestampUtcTime :: Timestamp -> UTCTime
 timestampUtcTime = posixSecondsToUTCTime . timestampPosixTime
 
+timestampDay :: Timestamp -> Day
+timestampDay = utctDay . timestampUtcTime
+
 utcTimeTimestamp :: UTCTime -> Timestamp
 utcTimeTimestamp =
   posixTimeTimestamp . utcTimeToPOSIXSeconds
