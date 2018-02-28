@@ -1,8 +1,8 @@
-module Eternity.Timestamped.Conversion
+module Eternity.Timestamped.Data.Conversion
 where
 
 import Eternity.Timestamped.Prelude
-import Eternity.Timestamped.Data
+import Eternity.Timestamped.Data.TypesAndInstances
 
 
 timestampMicroSecondsInt64 :: Timestamp -> Int64

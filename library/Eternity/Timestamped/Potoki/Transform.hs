@@ -3,7 +3,6 @@ where
 
 import Eternity.Timestamped.Prelude
 import Eternity.Timestamped.Data
-import Eternity.Timestamped.Conversion
 import Potoki.Transform
 
 
