@@ -14,7 +14,8 @@ data Timestamped event = Timestamped {-# UNPACK #-} !Timestamp !event
 Amount of microseconds since @1970-01-01 00:00.000000 UTC@.
 The semantics are the same as of 'Data.Time.Clock.POSIX.POSIXTime'.
 
-This datatype is used instead of 'UTCTime' for space-efficiency.
+This datatype is used instead of 'UTCTime' or 'Data.Time.Clock.POSIX.POSIXTime'
+for space-efficiency.
 -}
 newtype Timestamp = Timestamp Int64
 
