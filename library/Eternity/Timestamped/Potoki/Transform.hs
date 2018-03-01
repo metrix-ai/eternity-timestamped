@@ -4,6 +4,7 @@ where
 import Eternity.Timestamped.Prelude
 import Eternity.Timestamped.Data
 import Potoki.Transform
+import qualified Eternity.Timestamped.IO as A
 
 
 {-|
@@ -18,6 +19,4 @@ E.g., you can apply it to 'Eternity.Timestamped.Potoki.Consume.writeToDir':
 -}
 timestamp :: Transform event (Timestamped event)
 timestamp =
-  mapInIO $ \ event -> do
-    posixTime <- getPOSIXTime
-    return (Timestamped (posixTimeTimestamp posixTime) event)
+  mapInIO A.timestamp
