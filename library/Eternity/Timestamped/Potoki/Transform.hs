@@ -2,7 +2,7 @@ module Eternity.Timestamped.Potoki.Transform
 where
 
 import Eternity.Timestamped.Prelude
-import Eternity.Timestamped.Data
+import Timestamp
 import Potoki.Transform
 import qualified Eternity.Timestamped.IO as A
 

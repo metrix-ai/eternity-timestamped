@@ -2,7 +2,7 @@ module Eternity.Timestamped.Potoki.Consume
 where
 
 import Eternity.Timestamped.Prelude hiding (fold)
-import Eternity.Timestamped.Data
+import Timestamp
 import Potoki.Consume
 import qualified Eternity.Potoki.Consume as A
 

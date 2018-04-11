@@ -2,7 +2,7 @@ module Eternity.Timestamped.IO
 where
 
 import Eternity.Timestamped.Prelude
-import Eternity.Timestamped.Data
+import Timestamp
 
 
 timestamp :: event -> IO (Timestamped event)

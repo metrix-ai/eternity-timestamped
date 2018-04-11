@@ -5,7 +5,7 @@ module Eternity.Timestamped.Foldl
 where
 
 import Eternity.Timestamped.Prelude hiding (maximum)
-import Eternity.Timestamped.Data
+import Timestamp
 import Control.Foldl
 
 

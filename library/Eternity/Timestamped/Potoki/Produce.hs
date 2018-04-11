@@ -2,7 +2,7 @@ module Eternity.Timestamped.Potoki.Produce
 where
 
 import Eternity.Timestamped.Prelude
-import Eternity.Timestamped.Data
+import Timestamp
 import Potoki.Produce
 import qualified Eternity.Potoki.Produce as A
 
